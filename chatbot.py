@@ -55,8 +55,7 @@ def help_command(update: Update, context: CallbackContext) -> None:
 def hello_command(update: Update, context: CallbackContext) -> None:
     """Send a message when the command /hello is issued."""
     msg = context.args[0]
-    if(msg == 'Kevin'):
-        update.message.reply_text('Good day, Kevin!')
+    update.message.reply_text('hellow '+msg)
 
 def add(update: Update, context: CallbackContext) -> None:
     """Send a message when the command /add is issued."""
