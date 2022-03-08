@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - main
+env:
+  DEP_PATH: src/requirements.txt
 
 jobs:
   build:
@@ -13,6 +15,8 @@ jobs:
           fetch-depth: 0
       - name: Python Safety Check
         uses: aufdenpunkt/python-safety-check@v1.0.5
+        with:
+          scan_requirements_file_only: 'true'
 
        
       - name: Deploy
