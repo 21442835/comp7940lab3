@@ -13,8 +13,9 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - name: Security vulnerabilities scan
-        uses: aufdenpunkt/python-safety-check@master
+      - name: Python Safety Check
+        uses: aufdenpunkt/python-safety-check@v1.0.5
+
        
       - name: Deploy
         env:
