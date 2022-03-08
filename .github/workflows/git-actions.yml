@@ -4,7 +4,7 @@ on:
     branches:
       - main
 env:
-  DEP_PATH: main/chatbot.py
+  DEP_PATH: /github/workspace/main/chatbot.pychatbot.py
 
 jobs:
   build:
