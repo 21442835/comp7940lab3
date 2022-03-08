@@ -11,8 +11,7 @@ jobs:
         with:
           fetch-depth: 0
       - uses: aufdenpunkt/python-safety-check
-         with:
-          fetch-depth: 0
+       
       - name: Deploy
         env:
           HEROKU_API_KEY: ${{secrets.HEROKU_API_KEY}}
